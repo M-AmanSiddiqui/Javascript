@@ -1,5 +1,9 @@
+function generateTable() {
+    var tableNumber = document.getElementById("tableNumber").value;
+    var output = document.getElementById("output");
+    output.innerHTML = ""; // Clear previous output
 
-// var tableNumber= prompt("Enter a Number" )
-// for (var i = 1; i <= 25;  i++){
-// document.write(tableNumber + ' x ' + i + ' = ' + tableNumber * i +"<br><br>" )
-// }
+    for (var i = 1; i <= 25; i++) {
+      output.innerHTML += tableNumber + ' x ' + i + ' = ' + (tableNumber * i) + "<br><br>";
+    }
+  }
